@@ -6,48 +6,10 @@
     <title>Privacy Policy</title>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <link rel='stylesheet prefetch' href='https://fperucic.github.io/treant-js/Treant.css'>
-    <style type="text/css">
-.chart { height: 159px; width: 332px; margin: 5px; margin: 5px auto; border: 3px solid #DDD; border-radius: 3px; }
- .data-category {
-        background-color: rgba(255,0,0,0.4);
-    }
-    .DC {
-        background-color: rgba(255,0,0,0.4);
-    }
-    .data-type {
-        background-color: rgba(150,50,50,0.4);
-    }
-    .DT {
-        background-color: rgba(150,50,50,0.4);
-    }
-    .process {
-        background-color: rgba(0,0,250,0.4);
-    }
-    .legal-basis {
-        background-color: rgba(0,200,250,0.4);
-    }
-    .data-source {
-        background-color: rgba(100,200,50,0.4);
-    }
-    .processor {
-        background-color: rgba(250,200,0,0.4);
-    }
-    .third-party {
-        background-color: rgba(150,255,0,0.4);
-    }
-    #legend {
-        position: absolute;
-        top: 10px;
-        right: 250px;
-        padding: 5px; 
-        border: 2px dashed black;
-        background: white;
-    }
-    </style>
 <body>
     
     <div>
-        <div id="metadata" style="height: 500px; margin: 5px; width: auto;"> </div>
+        <div id="metadata" style="height: 1500px; margin: 5px; width: auto;"> </div>
     </div>
     <script src="https://fperucic.github.io/treant-js/Treant.js"></script>
     <script src="https://fperucic.github.io/treant-js/vendor/raphael.js"></script>
@@ -55,12 +17,12 @@
 var simple_chart_config = {
     chart: {
         container: "#metadata",
-        // rootOrientation: "WEST",
+        rootOrientation: "WEST",
         levelSeparation:    50,
         siblingSeparation:  25,
         subTeeSeparation:   25,
         connectors: {
-            type: "step",
+            // type: "step",
             style: {
                 "stroke-width": 2
             }
@@ -94,18 +56,18 @@ var simple_chart_config = {
                         text: { name: "legal basis" },
                         children: [
                             {
-                                text: { name: "Necessary" }
+                                text: { name: "legitimate purposes" }
                             },
                             {
-                                text: { name: "Opt-In" }
+                                text: { name: "opt-in/voluntary" }
                             }
                         ]
                     },
                     {
-                        text: { name: "mechanism" },
+                        text: { name: "collection mechanism" },
                         children: [
                             {
-                                text: { name: "manual" }
+                                text: { name: "given by user" }
                             },
                             {
                                 text: { name: "automatic" }
@@ -118,27 +80,30 @@ var simple_chart_config = {
             //     text: { name: "Data Usage" },
             //     children: [
             //         {
-            //             text: { name: "Operate Services" }
+            //             text: { name: "provide security" }
             //         },
             //         {
-            //             text: { name: "Security" }
+            //             text: { name: "legal obligations" }
             //         },
             //         {
-            //             text: { name: "Legal Obligations" }
-            //         },
-            //         {
-            //             text: { name: "Other" },
+            //             text: { name: "for Services" },
             //             children: [
             //                 {
-            //                     text: { name: "Improve Services" }
+            //                     text: { name: "develop" }
             //                 },
             //                 {
-            //                     text: { name: "Analytics" }
+            //                     text: { name: "provide" }
             //                 },
             //                 {
-            //                     text: { name: "Marketing" }
+            //                     text: { name: "improve" }
             //                 }
             //             ]
+            //         },
+            //         {
+            //             text: { name: "analytics" }
+            //         },
+            //         {
+            //             text: { name: "marketing" }
             //         }
             //     ]
             // }
