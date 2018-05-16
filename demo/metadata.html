@@ -56,7 +56,7 @@ var simple_chart_config = {
                         text: { name: "legal basis" },
                         children: [
                             {
-                                text: { name: "legitimate purposes" }
+                                text: { name: "legitimate interest" }
                             },
                             {
                                 text: { name: "opt-in/voluntary" }
@@ -76,37 +76,78 @@ var simple_chart_config = {
                     }
                 ]
             },
-            // {
-            //     text: { name: "Data Usage" },
-            //     children: [
-            //         {
-            //             text: { name: "provide security" }
-            //         },
-            //         {
-            //             text: { name: "legal obligations" }
-            //         },
-            //         {
-            //             text: { name: "for Services" },
-            //             children: [
-            //                 {
-            //                     text: { name: "develop" }
-            //                 },
-            //                 {
-            //                     text: { name: "provide" }
-            //                 },
-            //                 {
-            //                     text: { name: "improve" }
-            //                 }
-            //             ]
-            //         },
-            //         {
-            //             text: { name: "analytics" }
-            //         },
-            //         {
-            //             text: { name: "marketing" }
-            //         }
-            //     ]
-            // }
+            {
+                text: { name: "Data Usage" },
+                children: [
+                    {
+                        text: { name: "provide security" }
+                    },
+                    {
+                        text: { name: "legal obligations" }
+                    },
+                    {
+                        text: { name: "for Services" },
+                        children: [
+                            {
+                                text: { name: "develop" }
+                            },
+                            {
+                                text: { name: "provide" }
+                            },
+                            {
+                                text: { name: "improve" }
+                            }
+                        ]
+                    },
+                    {
+                        text: { name: "analytics" }
+                    },
+                    {
+                        text: { name: "marketing" }
+                    },
+                    {
+                        text: { name: "Payments Controller" }
+                    }
+                ]
+            },
+            {
+                text: { name: "Data Sharing" },
+                children: [
+                    {
+                        text: { name: "choice" },
+                        children: [
+                            {
+                                text: { name: "given consent" },
+                            },
+                            {
+                                text: { name: "legitimate interest"}
+                            }
+                        ]
+                    },
+                    {
+                        text: { name: "party" },
+                        children: [
+                            {
+                                text: { name: "other users" }
+                            },
+                            {
+                                text: { name: "public profile" }
+                            },
+                            {
+                                text: { name: "third-party"},
+                                children: [
+                                    {
+                                        text: { name: "selected by Host" }
+                                    },
+                                    {
+                                        text: { name: "business partners" }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 };
